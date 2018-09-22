@@ -133,6 +133,8 @@ namespace DoingConsoleStuff
             {
                 numKillsAtt = 0;
                 numKillsDef = 0;
+
+
             }
         }
     }
