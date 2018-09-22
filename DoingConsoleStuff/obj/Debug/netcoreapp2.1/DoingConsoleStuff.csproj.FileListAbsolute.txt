@@ -1,0 +1,11 @@
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\DoingConsoleStuff.deps.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\DoingConsoleStuff.runtimeconfig.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\DoingConsoleStuff.runtimeconfig.dev.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\DoingConsoleStuff.dll
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\DoingConsoleStuff.pdb
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\DoingConsoleStuff.csprojAssemblyReference.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\DoingConsoleStuff.csproj.CoreCompileInputs.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\DoingConsoleStuff.AssemblyInfoInputs.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\DoingConsoleStuff.AssemblyInfo.cs
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\DoingConsoleStuff.dll
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\DoingConsoleStuff.pdb
