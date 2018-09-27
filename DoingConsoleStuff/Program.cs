@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace DoingConsoleStuff
+namespace RiskSchlachtenSimulator
 {
     class Program
     {
         static void Main(string[] args)
         {
-            SchlachtenSimulator.FourthPhaseProbability();
 
-
-            Console.Read();
+            Army attackingArmy = new Army(100, 100, 100, 100);
+            
+            System.Console.Read();
         }
     }
 }

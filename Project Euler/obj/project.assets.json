@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luka\\source\\repos\\DoingConsoleStuff\\DoingConsoleStuff\\RiskSchlachtenSimulator.csproj",
-      "projectName": "RiskSchlachtenSimulator",
-      "projectPath": "C:\\Users\\Luka\\source\\repos\\DoingConsoleStuff\\DoingConsoleStuff\\RiskSchlachtenSimulator.csproj",
+      "projectUniqueName": "C:\\Users\\Luka\\source\\repos\\DoingConsoleStuff\\Project Euler\\Project Euler.csproj",
+      "projectName": "Project Euler",
+      "projectPath": "C:\\Users\\Luka\\source\\repos\\DoingConsoleStuff\\Project Euler\\Project Euler.csproj",
       "packagesPath": "C:\\Users\\Luka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luka\\source\\repos\\DoingConsoleStuff\\DoingConsoleStuff\\obj\\",
+      "outputPath": "C:\\Users\\Luka\\source\\repos\\DoingConsoleStuff\\Project Euler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
