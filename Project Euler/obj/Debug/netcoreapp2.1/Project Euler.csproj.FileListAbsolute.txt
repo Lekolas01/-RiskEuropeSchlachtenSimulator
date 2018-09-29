@@ -1,0 +1,11 @@
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\bin\Debug\netcoreapp2.1\Project Euler.deps.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\bin\Debug\netcoreapp2.1\Project Euler.runtimeconfig.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\bin\Debug\netcoreapp2.1\Project Euler.runtimeconfig.dev.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\bin\Debug\netcoreapp2.1\Project Euler.dll
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\bin\Debug\netcoreapp2.1\Project Euler.pdb
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\obj\Debug\netcoreapp2.1\Project Euler.csprojAssemblyReference.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\obj\Debug\netcoreapp2.1\Project Euler.csproj.CoreCompileInputs.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\obj\Debug\netcoreapp2.1\Project Euler.AssemblyInfoInputs.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\obj\Debug\netcoreapp2.1\Project Euler.AssemblyInfo.cs
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\obj\Debug\netcoreapp2.1\Project Euler.dll
+C:\Users\Luka\source\repos\DoingConsoleStuff\Project Euler\obj\Debug\netcoreapp2.1\Project Euler.pdb

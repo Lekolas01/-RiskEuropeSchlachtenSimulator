@@ -1,0 +1,11 @@
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\RiskSchlachtenSimulator.csprojAssemblyReference.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\RiskSchlachtenSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\RiskSchlachtenSimulator.AssemblyInfoInputs.cache
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\RiskSchlachtenSimulator.AssemblyInfo.cs
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\RiskSchlachtenSimulator.deps.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\RiskSchlachtenSimulator.runtimeconfig.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\RiskSchlachtenSimulator.runtimeconfig.dev.json
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\RiskSchlachtenSimulator.dll
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\bin\Debug\netcoreapp2.1\RiskSchlachtenSimulator.pdb
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\RiskSchlachtenSimulator.dll
+C:\Users\Luka\source\repos\DoingConsoleStuff\DoingConsoleStuff\obj\Debug\netcoreapp2.1\RiskSchlachtenSimulator.pdb

@@ -3,23 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using RiskSchlachtenSimulator;
 
-namespace DoingConsoleStuff
+namespace RiskSchlachtenSimulator
 {
-    class SchlachtenSimulator
+    public class SchlachtenSimulator
     {
         
-
-        const double siegeMachineHitRate = 2 / 3;
+        const double siegeMachineHitRate = (double)2 / (double)3;
         const double archerHitRate = 1 / 3;
         const double knightHitRate = 2 / 3;
+        Random rnd = new Random();
 
-        Army AttackingArmy;
-        Army DefendingArmy;
-
-        public SchlachtenSimulator(int siegeMachineAtt, int siegeMachineDef, int archerAtt, int archerDef, int knightAtt, int knightDef, int meatAtt, int meatDef)
+        public SchlachtenSimulator()
         {
-            AttackingArmy = new Army(siegeMachineAtt, archerAtt, knightAtt, meatAtt);
-            DefendingArmy = new Army(siegeMachineDef, archerDef, knightDef, meatDef);
         }
         
 
@@ -27,21 +22,18 @@ namespace DoingConsoleStuff
         {
             return (army.numSiegeMachines != 0 || army.numArchers != 0 || army.numKnights != 0 || army.numMeat != 0);
         }
+        
 
-
-        private bool BothAlive(Army Army1, Army Army2)
+        public double CalculateProbability(Army AttackingArmy, Army DefendingArmy, int numIterations)
         {
-            return ArmyAlive(Army1) && ArmyAlive(Army2);
-        }
 
-        public int CalculateProbability(int numIterations)
-        {
             int numWinsAtt = 0;
             int numWinsDef = 0;
             int numDraws = 0;
             Army StartingAttackingArmy;
             Army StartingDefendingArmy;
-            for (int i = 1; i <= numIterations; i++)
+
+            for (int i = 0; i < numIterations; i++)
             {
                 StartingAttackingArmy = AttackingArmy;
                 StartingDefendingArmy = DefendingArmy;
@@ -61,23 +53,23 @@ namespace DoingConsoleStuff
                         break;
                 }
             }
-            return numWinsAtt / numIterations;
+            double probability = numWinsAtt / numIterations;
+            return probability;
         }
 
 
-        public int Fight(Army AttackingArmy, Army DefendingArmy)
+        private int Fight(Army AttackingArmy, Army DefendingArmy)
         {
-
-            while(BothAlive(AttackingArmy, DefendingArmy))
+            while (ArmyAlive(AttackingArmy) && ArmyAlive(DefendingArmy))
             {
                 Phase1(AttackingArmy, DefendingArmy);
-                if (BothAlive(AttackingArmy, DefendingArmy))
+                if (ArmyAlive(AttackingArmy) && ArmyAlive(DefendingArmy))
                 {
                     Phase2(AttackingArmy, DefendingArmy);
-                    if (BothAlive(AttackingArmy, DefendingArmy))
+                    if (ArmyAlive(AttackingArmy) && ArmyAlive(DefendingArmy))
                     {
                         Phase3(AttackingArmy, DefendingArmy);
-                        if (BothAlive(AttackingArmy, DefendingArmy))
+                        if (ArmyAlive(AttackingArmy) && ArmyAlive(DefendingArmy))
                         {
                             Phase4(AttackingArmy, DefendingArmy);
                         };
@@ -94,6 +86,54 @@ namespace DoingConsoleStuff
                 return 1;
             }
             return -1;
+        }
+
+        int DamageArmyType(int numUnits, int numKills)
+        {
+            return numUnits -= Math.Min(numUnits, numKills);
+
+        }
+        
+
+        private void DamageArmy(Army army, int numKills)
+        {
+            if (numKills > 0) {
+                army.numMeat = DamageArmyType(army.numMeat, numKills);
+                if (numKills > 0)
+                {
+                    army.numArchers = DamageArmyType(army.numArchers, numKills);
+                    if(numKills > 0)
+                    {
+                        army.numKnights = DamageArmyType(army.numKnights, numKills);
+                        if (numKills > 0)
+                        {
+                            army.numSiegeMachines = DamageArmyType(army.numSiegeMachines, numKills);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        private void TradeDamage(Army AttackingArmy, int AttackerKills, Army DefendingArmy, int DefenderKills)
+        {
+
+            DamageArmy(AttackingArmy, DefenderKills);
+            DamageArmy(DefendingArmy, AttackerKills);
+        }
+
+
+        private int Phase1To3(int numHits, int hitRate)
+        {
+            int count = 0;
+            for (int i = 1; i <= numHits; i++)
+            {
+                if (hitRate >= rnd.NextDouble())
+                {
+                    count++;
+                }
+            }
+            return count;
         }
 
         private void Phase4(Army attackingArmy, Army defendingArmy)
@@ -113,15 +153,24 @@ namespace DoingConsoleStuff
 
         private void Phase1(Army attackingArmy, Army defendingArmy)
         {
-            int numKillsAtt;
-            int numKillsDef;
+            int numKillsAtt = 0;
+            int numKillsDef = 0;
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 1; i <= attackingArmy.numSiegeMachines * 2; i++)
             {
-                numKillsAtt = 0;
-                numKillsDef = 0;
-                
+                if (siegeMachineHitRate >= rnd.NextDouble()) {
+                    numKillsAtt++;
+                };
             }
+              
+            for (int i = 1; i <= defendingArmy.numSiegeMachines * 2; i++)
+            {
+                if (siegeMachineHitRate >= rnd.NextDouble())
+                {
+                    numKillsDef++;
+                };
+            }
+            TradeDamage(attackingArmy, numKillsAtt, defendingArmy, numKillsDef);
         }
     }
 
